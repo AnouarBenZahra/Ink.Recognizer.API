@@ -51,10 +51,8 @@ namespace Ink.Recognizer.API
             return Newtonsoft.Json.JsonConvert.DeserializeObject(result);
         }
 
-
         private JObject dataJson(string fileLocation)
         {
-
             var jsonObj = new JObject();
 
             using (StreamReader file = File.OpenText(fileLocation))
